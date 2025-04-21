@@ -51,7 +51,7 @@ const storeBooks = (request, h) => {
 
     books.push(newBooks);
 
-    const isSuccess = books.filter((book) => book,id === id).length > 0;
+    const isSuccess = books.filter((book) => book.id === id).length > 0;
     if(isSuccess){
         const response = h.response({
             status: 'success',
